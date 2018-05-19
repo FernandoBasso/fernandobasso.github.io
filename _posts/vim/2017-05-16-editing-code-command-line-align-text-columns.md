@@ -181,8 +181,6 @@ And we want to turn it into PHP’s associative `'key' ⇒ 'value'` array entrie
 
 The array key should be lowercased. The array value remains untouched.
 
-And we want to turn that into a PHP array like `'sn' ⇒ 'State Name'`. My first attempt was this:
-
     '<,'>s:[^"]\+"\(\u\u\)">\([^<]\+\).*$:'\l\1' => '\2',
 
 The matching part goes like this:
