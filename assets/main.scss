@@ -1,0 +1,36 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+$color1: #6ca516; // darker gray.
+$color2: #74a516; // greenish
+$color3: #abed77; // lighter than color1
+$color4: #f1f1f1; //#ebfbcd; // still green, but almost completely white
+$black1: #222; // black
+$black2: #1b1b1b;
+
+$color-link-inside-post: #65b9e6;
+
+$code-bg-color: #ddf3b7; //#efefef;
+
+
+@import "minima";
+
+::selection {
+    background-color: lighten($black1, 8%);
+}
+
+::-moz-selection {
+    background-color: lighten($black1, 8%);
+}
+
+.highlighter-rouge *::selection {
+    background-color: lighten($color3, 0.1%);
+}
+.highlighter-rouge *::-moz-selection {
+    background-color: lighten($color3, 0.1%);
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}

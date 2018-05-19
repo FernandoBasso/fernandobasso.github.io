@@ -1,0 +1,35 @@
+title: Fernando Basso
+subtitle: Programming, Command Line, Thoughts
+email: fernandobasso.br@gmail.com
+description: >-
+    Programming, command line, open source and all things Linux/*nix, networking and technology in general.
+baseurl: "https::/fernandobasso.github.io"
+url: "https://fernandobasso.github.io"
+username_linkedin: 'FernandoBasso'
+username_skype: 'FernandoBasso.br'
+username_gitlab: 'FernandoBasso'
+username_github: 'FernandoBasso'
+username_gplus: 'FernandoBasso'
+#username_youtube: 'My 1 Video Channel'
+username_twitter: 'FernandoBassoBr'
+
+# Build settings
+markdown: kramdown
+destination: ../compiled
+plugins:
+  - jekyll-feed
+  - jekyll-toc
+
+#  - jekyll-octicons
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

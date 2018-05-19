@@ -1,0 +1,29 @@
+.section-nav {
+  .toc-entry {
+    a {
+      color: $color2;
+      &:hover {
+        text-decoration: none;
+        color: $color3;
+      }
+    }
+  }
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25;
+  .anchor {
+    @media screen and (min-width: $lg + 1) {
+      float: left;
+      padding-right: 4px;
+      margin-left: -20px;
+      line-height: 1;
+      vertical-align: middle;
+    }
+    @media screen and (max-width: $lg) {
+      float: none;
+      padding-right: 4px;
+    }
+  }
+}

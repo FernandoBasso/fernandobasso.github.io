@@ -1,0 +1,16 @@
+
+/**
+ * Site footer
+ */
+.site-footer {
+  border-top: 1px dashed $color1;
+  padding: $spacing-unit 0;
+  background-color: $black2;
+}
+
+.footer-col-wrapper {
+  text-align: right;
+  @include relative-font-size(0.9375);
+  color: $grey-color;
+}
+

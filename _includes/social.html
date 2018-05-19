@@ -1,0 +1,108 @@
+<ul class="social-media-list">
+
+  {%- if site.username_linkedin -%}
+    <li>
+        <a
+          href="https://www.linkedin.com/in/{{ site.username_linkedin | cgi_escape | escape }}"
+          target="_blank">
+          <svg class="svg-icon">
+            <use xlink:href="{{ '/assets/social-icons.svg#linkedin' | relative_url }}"
+            ></use>
+          </svg>
+          <span class="username">{{ site.username_linkedin | escape }}</span>
+        </a>
+    </li>
+  {%- endif -%}
+
+  {%- if site.username_skype -%}
+  <li>
+    <a href="skype:fernandobasso.br?chat">
+      <svg class="svg-icon">
+        <use
+          xlink:href="{{ '/assets/social-icons.svg#skype' | relative_url }}"
+        ></use>
+      </svg>
+      <span class="username"
+        >{{ site.username_skype | escape }}
+      </span>
+      </a>
+  </li>
+  {%- endif -%}
+
+  {%- if site.username_gitlab -%}
+  <li>
+    <a href="https://gitlab.com/fernandobasso" target="_blank">
+      <svg class="svg-icon">
+        <use
+          xlink:href="{{ '/assets/social-icons.svg#gitlab' | relative_url }}"
+        ></use>
+      </svg>
+      <span class="username"
+        >{{ site.username_gitlab | escape }}
+      </span>
+      </a>
+  </li>
+  {%- endif -%}
+
+  {%- if site.username_github -%}
+  <li>
+    <a href="https://github.com/fernandobasso" target="_blank">
+      <svg class="svg-icon">
+        <use
+          xlink:href="{{ '/assets/social-icons.svg#github' | relative_url }}"
+        ></use>
+      </svg>
+      <span class="username"
+        >{{ site.username_github | escape }}
+      </span>
+      </a>
+  </li>
+  {%- endif -%}
+
+  {%- if site.username_gplus -%}
+  <li>
+    <a href="https://plus.google.com/+FernandoBasso" target="_blank">
+      <svg class="svg-icon">
+        <use
+          xlink:href="{{ '/assets/social-icons.svg#gplus' | relative_url }}"
+        ></use>
+      </svg>
+      <span class="username"
+        >{{ site.username_gplus | escape }}
+      </span>
+      </a>
+  </li>
+  {%- endif -%}
+
+  {%- if site.username_youtube -%}
+  <li>
+    <a href="https://youtube.com/channel/{{ site.username_youtube }}" target="_blank">
+      <svg class="svg-icon">
+        <use
+          xlink:href="{{ '/assets/social-icons.svg#youtube' | relative_url }}"
+        ></use>
+      </svg>
+      <span class="username"
+        >My 1-video chanell :D
+      </span>
+      </a>
+  </li>
+  {%- endif -%}
+
+  {%- if site.username_twitter -%}
+  <li>
+    <a href="https://twitter.com/FernandoBassoBr" target="_blank">
+      <svg class="svg-icon">
+        <use
+          xlink:href="{{ '/assets/social-icons.svg#twitter' | relative_url }}"
+        ></use>
+      </svg>
+      <span class="username"
+        >{{ site.username_twitter | escape }}
+      </span>
+      </a>
+  </li>
+  {%- endif -%}
+
+  {%- if site.rss -%}<li><a href="{{ 'feed.xml' | relative_url }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg> <span>{{ site.rss | escape }}</span></a></li>{%- endif -%}
+</ul>
