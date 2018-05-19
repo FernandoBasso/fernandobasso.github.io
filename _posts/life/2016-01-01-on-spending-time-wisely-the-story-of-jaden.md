@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: en/life/on-spending-time-wisely-the-story-of-jaden.html
+permalink: life/on-spending-time-wisely-the-story-of-jaden.html
 title: On Spending Time Wisely — The Story of Jaden
 excerpt: In this post, I will relate the habits of someone I know and expound on some things I think about this person’s frame of mind and how it affects their life
 date: 2017-01-01 14:05:30

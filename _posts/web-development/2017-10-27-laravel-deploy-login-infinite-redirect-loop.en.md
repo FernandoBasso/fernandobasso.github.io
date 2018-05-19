@@ -1,7 +1,7 @@
 ---
 layout: post
 toc: true
-permalink: en/web-development/laravel-deploy-login-problem-infinite-redirect-loop.html
+permalink: web-development/laravel-deploy-login-problem-infinite-redirect-loop.html
 title: Login Redirect Loop on Laravel in Production
 date: 2017-10-27 07:16:11
 excerpt: In this post I will talk about a problem I had when deploying a Laravel application in which authentication worked fine locally but not on the production server causing an infinite redirect loop.

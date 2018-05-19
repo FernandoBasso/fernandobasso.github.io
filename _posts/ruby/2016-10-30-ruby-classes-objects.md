@@ -1,7 +1,7 @@
 ---
 layout: post
 toc: true
-permalink: en/ruby/classes-and-objects.html
+permalink: ruby/classes-and-objects.html
 title: 'Understanding Classes, Objects, Methods, Instance Variables, Class Variables, Class Instance Variables and Inheritance in Ruby'
 excerpt: 'Understand Classes, Objects, Instace Variables, Class Variables, Class Instance Variables and how to create method to manipulate them, and how inheritance influences them\!'
 date: 2016-10-30 15:26:00

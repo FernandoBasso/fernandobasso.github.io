@@ -2,7 +2,7 @@
 layout: post
 toc: true
 title: Editing Code on Vim Command Line and Nicely Align Text on Columns
-permalink: en/vim/editing-code-command-line-align-text-columns.html
+permalink: vim/editing-code-command-line-align-text-columns.html
 date: 2017-05-16 19:08:00
 excerpt: Editing code using vim command line, search and replace and external `column` command.
 categories: vim programming tips
