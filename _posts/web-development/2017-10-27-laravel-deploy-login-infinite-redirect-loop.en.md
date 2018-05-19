@@ -53,9 +53,9 @@ public function isEditor()
 
 Simple enough, right‽ But do note the *triple equal sign* comparison operator I am using.
 
-# Let’s Thinker for a Moment…​
+# Let’s Tinker for a Moment…​
 
-I used `thinker` on my local and production environments. Take a look:
+I used `tinker` on my local and production environments. Take a look:
 
 ![Laravel Tinker - Devel vs Prod]({{ site.base_url }}/imgs/web-development/02-tinker-devel-vs-prod.jpg)
 
