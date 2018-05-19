@@ -19,6 +19,7 @@ destination: ../compiled
 plugins:
   - jekyll-feed
   - jekyll-toc
+  - jekyll-sitemap
 
 #  - jekyll-octicons
 
