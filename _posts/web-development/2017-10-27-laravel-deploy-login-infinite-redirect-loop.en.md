@@ -53,7 +53,7 @@ public function isEditor()
 
 Simple enough, right‽ But do note the *triple equal sign* comparison operator I am using.
 
-# Let’s Tinker for a Moment…​
+# Let’s Tinker for a Moment…
 
 I used `tinker` on my local and production environments. Take a look:
 
@@ -74,7 +74,7 @@ mysqldump -h localhost -u devel_user -ps3cr37 my_devel_db users | \
     mysql -h server.db.net -u prod_user -ps3cr37 -D my_prod_db
 ```
 
-I though, “of course, the data traveled through the network (mysql client/server communication happens through TCP) and became strings\!” Then I tried doing this on the server:
+I thought, “of course, the data traveled through the network (mysql client/server communication happens through TCP) and became strings\!” Then I tried doing this on the server:
 
 ``` php
 // Attempt to update has_role to 1, a number.
@@ -84,7 +84,7 @@ I though, “of course, the data traveled through the network (mysql client/serv
 // → "2"
 ```
 
-Nope, the numeric strings were still there…​ Then I tried through the mysql cli itself:
+Nope, the numeric strings were still there… Then I tried through the mysql cli itself:
 
 ``` sql
 UPDATE users SET has_role = 1 WHERE id = 1;
@@ -116,4 +116,4 @@ I decided the solution for now was just to use `==` instead of `===` in my Admin
 
 The lingering question is: what would have been the best approach in the first place that could have avoided the problem and saved me some hours of debugging and experimenting?
 
-I am not perfect and still seeking enlightenment…​
+I am not perfect and still seeking enlightenment…
