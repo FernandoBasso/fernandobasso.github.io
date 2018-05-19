@@ -61,7 +61,7 @@ I used `tinker` on my local and production environments. Take a look:
 
 I did immediately spot the difference. The local development returns `has_role` as numbers, integers, while the production side says they are strings\! How come‽ Moreover, recall I am using *triple equal sign* comparison operators in my `Admin` middleware? Yes, those two things combined resulted in the infinite redirect loop problem for the admin area.
 
-I then changed `==` with `===` on the Admin middleware methods, and indeed, the problem on the production side was gone. Everything working fine\!
+I then changed `===` with `==` on the Admin middleware methods, and indeed, the problem on the production side was gone. Everything working fine\!
 
 The question is why `has_role` values were integers locally, and strings on the production environment.
 
