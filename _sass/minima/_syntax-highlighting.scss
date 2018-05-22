@@ -5,6 +5,7 @@
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 0 12px rgba($color1, 0.8) inset;
+  text-shadow: none;
   @extend %vertical-rhythm;
 
   .highlighter-rouge & {
