@@ -5,6 +5,7 @@ title: Contact
 index: 3
 permalink: contact/
 ---
+
 {%- include social.html -%}
 
 You can also find me on IRC with by the nick ‘Fernando-Basso’ (yeah, just my name).

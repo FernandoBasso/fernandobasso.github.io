@@ -15,6 +15,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   color: $color1; //$text-color;
   background-color: $black1; //$background-color;
   -webkit-text-size-adjust: 100%;
