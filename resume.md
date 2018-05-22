@@ -42,7 +42,7 @@ Some front-end technologies I have worked with for a long time:
 
   - Vue.js
 
-  - HTML and CSS \[1\]
+  - HTML and CSS<sup>[1](#fn1)</sup>
 
   - Sass
 
@@ -86,8 +86,7 @@ And I do know how to use them from the command line as well. I mean, if there is
 
 ## Shell Script and Command Line in General
 
-  - Shell Script \[2\]
-
+  - Shell Script<sup>[2](#fn2)</sup>
   - Tools like sed, grep, find, cut, and almost all other useful command line programs that one may want and need to use on a \*nix system
 
 ## Other Experience and Tools
@@ -105,11 +104,8 @@ And I do know how to use them from the command line as well. I mean, if there is
   - A bunch of small to medium web systems to solve particular business requirements for different clients, for instance:
 
       - a CMS manage web sites, and a module to manage real state
-
       - a system to manage products (prices, stock, etc.)
-
       - a system to manage clients and documents
-
       - sites with shopping carts, user registration, etc.
 
   - A bunch of web sites
@@ -122,6 +118,11 @@ And I do know how to use them from the command line as well. I mean, if there is
 
 <!-- end list -->
 
-1.  Yeah, I know many do no consider this real programming, but it is part of the game nontheless.
+-----
+<div class="footnotes">
 
-2.  I do create scripts to help me with a lot of things like automating tasks, backups, etc.
+ <p><a name="fn1">1</a> Yeah, I know many do no consider this real programming, but it is part of the game nonetheless.</p>
+
+ <p><a name="fn2">2</a> I do create scripts to help me with a lot of things like automating tasks, backups, etc.</p>
+
+ </div>

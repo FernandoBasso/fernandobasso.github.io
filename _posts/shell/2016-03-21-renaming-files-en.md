@@ -145,9 +145,11 @@ Using the expansion `${parts[2]%.*}`, the `.jpg` part is removed. Only the singl
 
 Fasten the seatbelt. Use the force to understand this one. Anything less won’t do.
 
-    for img in pag-2016-[0-9].jpg ; do
-        mv "$img" $(printf %s-%d%d.jpg "${img%-*}" "0" $(sed 's/.*\([0-9]\)\.jpg/\1/' <<< $img))
-    done
+```shell
+for img in pag-2016-[0-9].jpg ; do
+    mv "$img" $(printf %s-%d%d.jpg "${img%-*}" "0" $(sed 's/.*\([0-9]\)\.jpg/\1/' <<< $img))
+done
+```
 
 To spindle the new name for the image (the second parameter to `mv`), a lot of stuff is going on. First of all, we use `printf` inside a subshell. We specified `%s-%d-%d.jpg` to printf. The corresponding argument that matches `%s` is `"${img%-*}"`, which starts from the end of the filename, and removes everything up to the first `-`. The result is something like `pag-2016`.
 
