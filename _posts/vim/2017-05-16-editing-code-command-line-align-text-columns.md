@@ -10,7 +10,16 @@ categories: vim programming tips
 
 Today I’ll show some ways to edit text using vim’s command line search and replace plus how to use an external command to help us nicely align columns of text.
 
-# Example \#1
+NOTE: The asciinema player sometimes positions the player's bottom bar in such a way that we can't see the vim commands being typed. Make the player full screen or take the mouse away from the player to make that bottom bar disappear.
+
+
+# Example \#1 - php variables to assignment
+
+See it in action bellow [(or here)](https://asciinema.org/a/183689){:target="____blank"}  and then take a look at the explanation.
+
+<script src="https://asciinema.org/a/183689.js" id="asciicast-183689" async></script>
+
+[here](https://asciinema.org/a/183689){:target="____blank}
 
 So, I was working in some PHP code and I had these variables which I needed to initialize with the values from a POST request.
 
@@ -95,25 +104,29 @@ $numero         =  param('numero');
 
 It is important to note the use of the `!` character so that the text in the selected lines is sent to the external program, operated on and then placed back (after modification), effectively replacing the old, unaligned columns with the new, aligned ones.
 
-# Example \#2
+# Example \#2 - db columns to PHP/PDO bindParam
 
-This one is very similar, actually, but I do think it is worth to take a look at it nonetheless. Here is the raw input lines I had, copied from an SQL statement somewhere else:
+This one is very similar, actually, but I do think it is worth to take a look at it nonetheless. Here is the raw input lines I had, copied from an SQL statement somewhere else. See asciinema below or [here](https://asciinema.org/a/183692){:target="____blank"}:
 
-    nome
-    email
-    fone1
-    fone2
-    nome_fantasia
-    razao_social
-    cpf
-    cnpj
-    rg
-    ie
-    cidade
-    estado
-    rua
-    cep
-    numero
+<script src="https://asciinema.org/a/183692.js" id="asciicast-183692" async></script>
+
+```text
+nome
+email
+fone1
+fone2
+nome_fantasia
+razao_social
+cpf
+cnpj
+rg
+ie
+cidade
+estado
+rua
+cep
+numero
+```
 
 Then I run:
 
@@ -169,7 +182,88 @@ $sth->bindParam(':numero',         $numero,         PDO::PARAM_STR);
 
 Imagine doing all that replacing and aligning manually, character by character, line by line\!
 
-# Example \#3
+# Example \#3 - form name attr to php array
+
+In this case, we have an initial list of strings that come from HTML form input `name` attribute. See asciinema below or [here](https://asciinema.org/a/183694){:target="_blank"}. They look like this (
+
+<script src="https://asciinema.org/a/183694.js" id="asciicast-183694" async></script>
+
+
+```text
+form-cadastro__nome
+form-cadastro__email
+form-cadastro__fone1
+form-cadastro__fone2
+form-cadastro__nome-fantasia
+form-cadastro__razao-social
+form-cadastro__cpf
+form-cadastro__rg
+form-cadastro__cnpj
+form-cadastro__ie
+form-cadastro__estado
+form-cadastro__cidade
+form-cadastro__bairro
+form-cadastro__rua
+form-cadastro__numero
+form-cadastro__cep
+form-cadastro__senha
+```
+
+And we want to retrieve those values from the request and create an associative array with them, but the array key does not contain the substring `form-cadastro__`. So,
+
+```text
+form-cadastro__nome
+```
+
+becomes:
+
+```text
+$data['nome'] = param('form-cadastro__nome');
+```
+
+So, if the lines we want to modify are betwee 5 and 21, we would do:
+
+```text
+:5,21 s:.\+__\(.\+\):$data['\1'] = param('&');:
+:5,21 !column -t
+```
+
+The result is:
+
+```php
+$data['nome']           =  param('form-cadastro__nome');
+$data['email']          =  param('form-cadastro__email');
+$data['fone1']          =  param('form-cadastro__fone1');
+$data['fone2']          =  param('form-cadastro__fone2');
+$data['nome-fantasia']  =  param('form-cadastro__nome-fantasia');
+$data['razao-social']   =  param('form-cadastro__razao-social');
+$data['cpf']            =  param('form-cadastro__cpf');
+$data['rg']             =  param('form-cadastro__rg');
+$data['cnpj']           =  param('form-cadastro__cnpj');
+$data['ie']             =  param('form-cadastro__ie');
+$data['estado']         =  param('form-cadastro__estado');
+$data['cidade']         =  param('form-cadastro__cidade');
+$data['bairro']         =  param('form-cadastro__bairro');
+$data['rua']            =  param('form-cadastro__rua');
+$data['numero']         =  param('form-cadastro__numero');
+$data['cep']            =  param('form-cadastro__cep');
+$data['senha']          =  param('form-cadastro__senha');
+```
+
+Let's explain this command:
+```text
+:5,21 s:.\+__\(.\+\):$data['\1'] = param('&');:
+```
+
+- `5,21` is the line range, that is, to which lines should vim apply text transformation.
+- `s: :  :` is the substitute command using `:` as the delimiter.
+- `.\+__\(.\+\)` matches everything in the line, but also captures the text after `__` as group 1 (which will be used on the next steps).
+- `$data['\1']` inserts the characters `$data[ ]` and uses the group `\1` so the result is something like `$data['foo']`, `$data['bar']`, etc. `\1` is whatever was captured in group 1 for each line. The whole match would be something like `form-cadastro__foo`, but we captured just the `foo` that comes after `__` and therefore the array key gets the shorter name, discarding `form-cadastro__` part.
+- `param('&')` uses `&` wich is the whole match for that line, not just a specific group. So, if the line was `form-cadastro__cnpj`, it becomes `param('form-cadastro__cnpj')`.
+
+
+
+# Example \#4 - html option to php array
 
 This time, we have several lines with HTML `option` tags like this:
 
@@ -179,30 +273,25 @@ And we want to turn it into PHP’s associative `'key' ⇒ 'value'` array entrie
 
     'sn' => 'State Name',
 
-The array key should be lowercased. The array value remains untouched.
+<script src="https://asciinema.org/a/120995.js" id="asciicast-120995" async></script>
+
+The array key should be lowercased. The array value remains untouched. This is how it is done:
 
     '<,'>s:[^"]\+"\(\u\u\)">\([^<]\+\).*$:'\l\1' => '\2',
 
 The matching part goes like this:
 
   - match everything up to the first double quote: `[^"]\+"`;
-
   - then match and store two uppercase chars in a capturing group : `\(\u\u\)`;
-
   - match the closing `>` for opening `option` tag;
-
   - match and store the next characters up to but not including the next `<`: `\([^<]\+\)`;
-
   - match the rest of the line.
 
 And then the replacment part:
 
   - lowercase the text of the first capturing group: `\l\1` (problem here) and place it inside single quotes to make the PHP array key.
-
   - add the chars `⇒` (required by php array syntax);
-
   - then place the contents of the second capturing groups in single quotes as well;
-
   - the array trailing comma;
 
 So, something like
@@ -304,7 +393,7 @@ or
 
 There is more about this *range* of lines thing. Take a look at the help sections described below.
 
-# More help and man pages
+# Help and man pages
 
 Vim:
 
@@ -329,3 +418,6 @@ You can also take a look at:
 Column command:
 
     man 1 column
+
+
+
