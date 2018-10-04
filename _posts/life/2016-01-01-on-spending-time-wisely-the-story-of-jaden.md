@@ -10,7 +10,7 @@ categories: life wisdom time-management
 <div class="image-center-wrapper">
     <figure style="max-width: 387px;">
         <img
-            src="https://i.imgur.com/uwZaDqd.jpg"
+            src="/imgs/life/the-eye-by-fernando-basso.jpg?v=1"
             alt="The Eye, by Fernando Basso">
         <figcaption>The Eye — By Fernando Basso</figcaption>
     </figure>
