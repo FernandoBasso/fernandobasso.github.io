@@ -34,3 +34,11 @@ $code-bg-color: #e8f4d1; //#ddf3b7; //#efefef;
 .mb-0 {
   margin-bottom: 0 !important;
 }
+
+.image-center-wrapper {
+  text-align: center;
+  img,
+  figure {
+    margin: 0 auto;
+  }
+}
