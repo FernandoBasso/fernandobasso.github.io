@@ -7,13 +7,11 @@ permalink: shell/reading-and-understanding-command-line-documentation.html
 date: 2016-03-29 21:39:00
 ---
 
-<script src="https://asciinema.org/a/jcVzHsZfOlfjiSsXt4ij61XTu.js" id="asciicast-jcVzHsZfOlfjiSsXt4ij61XTu" async></script>
-
-Note: You can watch the asciinema above [here](https://asciinema.org/a/jcVzHsZfOlfjiSsXt4ij61XTu)!
-
-<!--
-<a href="https://asciinema.org/a/jcVzHsZfOlfjiSsXt4ij61XTu" target="_blank"><img src="https://asciinema.org/a/jcVzHsZfOlfjiSsXt4ij61XTu.png" /></a>
--->
+<a href="https://asciinema.org/a/jcVzHsZfOlfjiSsXt4ij61XTu" target="_blank">
+  <img
+    src="/imgs/shell/asciinema-asciiquarium1.png"
+    alt="asciinema asciiquarium" />
+</a>
 
 # Introduction
 
@@ -379,6 +377,10 @@ That is, `csi file` or `csi <option>`, and then, there is an option that takes a
 
 I know I repeated myself a lot in this last part, but I wanted to make sure to drive the point home. Sometimes the same thing explained in two or more different ways helps one to really grasp the concept or idea.
 
+By the way, have you seen this? :)
+
+<script src="https://asciinema.org/a/jcVzHsZfOlfjiSsXt4ij61XTu.js" id="asciicast-jcVzHsZfOlfjiSsXt4ij61XTu" async></script>
+
 And may the force and the source be always with you! <3
 
 <style>
@@ -397,3 +399,5 @@ code { font-weight: bold; !important }
 ::::::::::    ::::::           ::::         :::::::::
   </code>
 </pre>
+
+
