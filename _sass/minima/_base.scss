@@ -158,7 +158,7 @@ code {
   border: 1px solid rgba($color1, 0.18);
   border-radius: 5px;
   //background-color: $code-bg-color;;
-  color: darken($color1, 10%);
+  color: lighten($color1, 20%);
   border-radius: 3px;
   font-family: 'PT Mono', 'monospace';
 }
@@ -178,6 +178,7 @@ pre {
   max-height: 86vh;
 
   > code {
+    color: darken($color1, 12%);
     border: 0;
     padding-right: 0;
     padding-left: 0;
