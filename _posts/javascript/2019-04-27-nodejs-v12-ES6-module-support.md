@@ -14,13 +14,15 @@ categories: javascript
 - [The Command Line Options](#the-command-line-options)
 - [Conclusion](#conclusion)
 
-<div class="image-center-wrapper">
+<div
+  class="image-center-wrapper"
+  style="background-color: #fff; padding-bottom: 1em; border-radius: 10px;">
     <figure style="max-width: 100%;">
         <img
             style="display: inline-block; max-height: 600px;"
             src="/imgs/javascript/Victory-nephew-drawing-girl.png?v=1"
             alt="Girl, by Vitória (my 6-year-old nephew)">
-        <figcaption>Girl, by Vitória (my 6-year-old nephew)</figcaption>
+        <figcaption style="color: #000">Girl, by Vitória (my 6-year-old nephew)</figcaption>
     </figure>
 </div>
 
