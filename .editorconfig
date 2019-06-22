@@ -8,6 +8,6 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[*.{yml,scss,html,editorconfig}]
+[*.{.md,adoc,js,rb,c,py,rkt,yml,scss,html,editorconfig}]
 indent_size = 2
 

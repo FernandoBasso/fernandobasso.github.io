@@ -26,8 +26,6 @@ These are the programming languages that I am most comfortable with (so far ☺)
 
 And these are the ones I have some knowledge about, have done some toy projects or otherwise studied a good deal about them):
 
-  - Elm (currently studying, awesome lang\!)
-
   - C
 
   - Racket
@@ -36,11 +34,11 @@ And these are the ones I have some knowledge about, have done some toy projects 
 
   - Java
 
-  - Haskell
-
 Some front-end technologies I have worked with for a long time:
 
   - Vue.js
+
+  - React
 
   - HTML and CSS<sup>[1](#fn1)</sup>
 
@@ -63,6 +61,10 @@ I have reasonable experience with:
   - Laravel
 
   - Symfony
+
+  - Node.js
+
+  - Express
 
 ## Source Code Management
 
