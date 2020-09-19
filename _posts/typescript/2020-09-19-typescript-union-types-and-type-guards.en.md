@@ -93,7 +93,7 @@ But we get this message:
 Property 'text' does not exist on type 'string'.This means
 ```
 
-![error property does not exist typescript](./error1.png)
+![error property does not exist typescript](/imgs/typescript/error1.png)
 
 How come‽ We are saying our union type takes either a string, or an object which contains a property `text` which is of type string. What the poop
 
