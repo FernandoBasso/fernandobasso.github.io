@@ -190,4 +190,5 @@ The version with the type guard is cleaner, more self-documenting, more idiomati
 
 Sure, TypeScript is more verbose than vanilla, plain JavaScript, but we gain type safety and can rest assured that our data flow through the application is properly handled because the compiler tells us when something could be sleeping through.
 
-Besides that, the developer experience is greatly improved.
+Besides that, the developer experience is greatly improved. The editor gets much smarter with suggestions, warnings, etc. It works amazingly well for me with both Vim and NeoVim, and I see very good results with other editors too! Take a look at my [dotfiles](https://gitlab.com/fernandobasso/dotfiles) for my setup if you are curious.
+
