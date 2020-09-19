@@ -15,7 +15,9 @@ username_twitter: 'FernandoBassoBr'
 
 # Build settings
 markdown: kramdown
+hightlight: rouge
 destination: _site
+
 plugins:
   - jekyll-feed
   - jekyll-toc

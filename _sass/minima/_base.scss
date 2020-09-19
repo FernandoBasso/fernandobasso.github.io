@@ -157,10 +157,13 @@ code {
   @include relative-font-size(0.9375);
   border: 1px solid rgba($color1, 0.18);
   border-radius: 5px;
-  //background-color: $code-bg-color;;
-  color: lighten($color1, 20%);
+  // background-color: $code-bg-color;;
+  // color: lighten($color1, 20%);
+  color: #81b531;
   border-radius: 3px;
-  font-family: 'PT Mono', 'monospace';
+  font-family: 'Source Code Pro', 'PT Mono', 'monospace';
+  font-weight: 500;
+  font-size: 17px;
 }
 
 code {
