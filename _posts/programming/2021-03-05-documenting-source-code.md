@@ -18,10 +18,11 @@ categories: programming, development
 - [Unit Tests are Also Documentation](#unit-tests-are-also-documentation)
 - [Conclusion](#conclusion)
 
-I will use ECMAScript, some [JSDoc](https://jsdoc.app/) syntax, and concepts extracted from the awesome [How to Design Programs](https://htdp.org) book to exemplify the subject under discussion in this post, but it can be adapted and transferred to any other programming language. The ideas here are more important than the specific syntax for one given programming language.
 
-
+![Racket Rocket Countdown Design Program]({{ site.base_url }}/imgs/../../../../imgs/programming/racket-rocket-countdown.png)
 ## Intro
+
+**NOTE**: I will use ECMAScript, some [JSDoc](https://jsdoc.app/) syntax, and concepts extracted from the awesome [How to Design Programs](https://htdp.org) book to exemplify the subject under discussion in this post, but it can be adapted and transferred to any other programming language. The ideas here are more important than the specific syntax for one given programming language.
 
 Suppose we have this function:
 
