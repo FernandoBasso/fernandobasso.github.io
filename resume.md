@@ -80,7 +80,7 @@ And I do know how to use them from the command line as well. I mean, if there is
 
 ## Documentation
 
-Those who have worked with me know that I am crazy about self-documenting code _and_ code documentation in the form of comments. I love to have a well written and concise code doc in functions and methods explainng what it does, the parameters accepted, default parameters, what it returns, what is assumed, etc. I also like to [write about documentation]({% post_url programming/2021-03-05-documenting-source-code %}) :).
+Those who have worked with me know that I am crazy about self-documenting code _and_ code documentation in the form of comments. I love to have a well written and concise code doc in functions and methods explainng what it does, the parameters accepted, default parameters, what it returns, what is assumed, etc. I also like to [write about documentation]({% post_url programming/2021-03-06-documenting-source-code %}) :).
 
 ## Other Experience and Tools
 

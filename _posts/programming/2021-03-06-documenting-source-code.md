@@ -1,7 +1,7 @@
 ---
 layout: post
 toc: true
-permalink: programming/2021-03-05-documenting-source-code.html
+permalink: programming/2021-03-06-documenting-source-code.html
 title: Documenting Source Code
 date: 2021-03-06 07:07:31
 excerpt: Some ideas and examples on how I document source code.
@@ -19,7 +19,7 @@ categories: programming, development
 - [Conclusion](#conclusion)
 
 
-![Racket Rocket Countdown Design Program]({{ site.base_url }}/imgs/../../../../imgs/programming/racket-rocket-countdown.png)
+![Racket Rocket Countdown Design Program]({{ site.base_url }}/imgs/programming/racket-rocket-countdown.png)
 ## Intro
 
 **NOTE**: I will use ECMAScript, some [JSDoc](https://jsdoc.app/) syntax, and concepts extracted from the awesome [How to Design Programs](https://htdp.org) book to exemplify the subject under discussion in this post, but it can be adapted and transferred to any other programming language. The ideas here are more important than the specific syntax for one given programming language.
