@@ -3,7 +3,7 @@ layout: post
 toc: true
 permalink: programming/2021-03-05-documenting-source-code.html
 title: Documenting Source Code
-date: 2021-03-05 07:09:31
+date: 2021-03-06 07:07:31
 excerpt: Some ideas and examples on how I document source code.
 categories: programming, development
 ---
