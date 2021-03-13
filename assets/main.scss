@@ -35,6 +35,10 @@ $code-bg-color: #e8f4d1; //#ddf3b7; //#efefef;
   margin-bottom: 0 !important;
 }
 
+.line-through {
+  text-decoration: line-through;
+}
+
 .image-center-wrapper {
   text-align: center;
   img,
@@ -42,3 +46,25 @@ $code-bg-color: #e8f4d1; //#ddf3b7; //#efefef;
     margin: 0 auto;
   }
 }
+
+/**
+ * Fluid Width Youtube Video
+ * -------------------------
+ *
+ * https://css-tricks.com/fluid-width-video/
+ */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  margin: 2em 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+

@@ -1,0 +1,147 @@
+/**
+ * POEM in Star Wars style.
+ * :st
+ */
+:root {
+  --poem-width: 800px;
+  --poem-height: 600px;
+  --poem-color-fg: #ecc550;
+
+  /**
+   * Before the animation starts the text should be hidden
+   * below the bottom of the animation visible area.
+   */
+  --crawl-y-top: 256px;
+
+  /**
+   * How much space wee need for the whole text to scroll
+   * plus the “empty” space after the last line. This is to
+   * give the effect that the text ends and “emptiness” ensues
+   * after it and produces a sense of infinity. 😎️
+   *
+   * This value must be negative because of the scroll effect.
+   *
+   * If we have 80 lines and each line is 48px tall (including
+   * line-height plus margins top and bottom), that makes up
+   * 3840, so that is the minimum amount the scroll should run.
+   * We must also add the amount we added for the y-top plus
+   * the amount of “emptiness” we want after the last line of text.
+   */
+  --crawl-y-bottom: -3920px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+
+/**
+ * The animation to scroll the text in the screen.
+ */
+@keyframes animY {
+  0% {
+    transform: rotateX(45deg) translateY(var(--crawl-y-top));
+  }
+  100% {
+    transform: rotateX(45deg) translateY(var(--crawl-y-bottom));
+  }
+}
+
+.poem {
+  display: block;
+  perspective: 600px;
+  max-width: var(--poem-width);
+  height: var(--poem-height);
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  border: 5px solid #fff;
+  background-color: #000;
+  background-image: url('./bg-stars.png');
+  background-size: cover;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
+
+/**
+ * ‘animation-duration’ takes a number of seconds to wait
+ * before starting the animation. We handle this with
+ * JavaScript because there are some controls on the UI
+ * that let users fiddle with the animation.
+ */
+.crawl {
+  transform-style: preserve-3d;
+  transform-origin: top;
+
+  animation-name: animY;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+
+  width: var(--width);
+  height: calc(var(--height) * 5);
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #fff;
+  padding-top: 24em;
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+.running {
+  animation-play-state: running;
+}
+
+.poem-wrp {
+}
+
+@media (min-width: 768px) {
+  .poem-wrp {
+    padding: 2em 0;
+  }
+}
+
+
+.crawl p {
+  color: var(--poem-color-fg);
+  line-height: 1em;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+}
+
+.controls button {
+  border: 2px solid #eee;
+  padding: 0.5em;
+  margin: 0 8px;
+  width: 100px;
+  text-align: center;
+  background-color: #000;
+  border-radius: 8px;
+  color: #fff;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-weight: 700;
+  letter-spacing: 2px;
+  box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.controls button:hover {
+  box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.5) inset;
+  cursor: pointer;
+}
+
+.info {
+  padding: 2em 1em;
+  font-family: Ubuntu, Helvetica;
+  text-align: center;
+  color: #555;
+}
