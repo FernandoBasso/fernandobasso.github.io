@@ -3,7 +3,7 @@ layout: page
 toc: true
 title: Résumé
 index: 1
-permalink: rewsume.html
+permalink: resume.html
 ---
 
 Let me talk a bit about some of the skills helped and still help me on a day to day basis.
