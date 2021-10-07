@@ -74,9 +74,9 @@
   const numBrs = qsa('p br').length;
 
   //
-  // Let's make the duration take about 1.8 seconds per line.
+  // Let's make the duration take about 2.1 seconds per line.
   //
-  const duration = (numPs + numBrs) * 1.8;
+  const duration = (numPs + numBrs) * 2.1;
 
   // Set the default, initial seed.
   crawl.style.animationDuration = `${duration}s`;
