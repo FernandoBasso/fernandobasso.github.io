@@ -9,6 +9,24 @@ layout: default
 
   {{ content }}
 
+  <p class="dev-how-to">
+    <style scoped>
+      .dev-how-to {
+        border: 2px dashed #6ca516;
+        text-align: center;
+        padding: 0.6em;
+      }
+    </style>
+    Check my
+    <a
+      href="https://www.devhowto.dev/"
+      target="_blank"
+    >
+      https://www.devhowto.dev/
+    </a>
+    website as well.
+  </p>
+
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
