@@ -9,23 +9,46 @@ layout: default
 
   {{ content }}
 
-  <p class="dev-how-to">
+  <section class="my-other-sites">
     <style scoped>
-      .dev-how-to {
+      .my-other-sites {
         border: 2px dashed #6ca516;
         text-align: center;
         padding: 0.6em;
+        margin-bottom: 1em;
+      }
+      .my-other-sites ul {
+        list-style: none;
       }
     </style>
-    Check my
-    <a
-      href="https://www.devhowto.dev/"
-      target="_blank"
-    >
-      https://www.devhowto.dev/
-    </a>
-    website as well.
-  </p>
+    <p>Check my other notes and docs as well:</p>
+    <ul>
+      <li>
+        <a
+          href="https://www.devhowto.dev/"
+          target="_blank"
+        >
+          Dev How To on Read The Docs
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://devhowto.gitlab.io"
+          target="_blank"
+        >
+          Dev How To on Gitlab Pages
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://devhowto.notion.site/9404c47a1fba4cbd90193b4f821d9d03"
+          target="_blank"
+        >
+          Dev How To Dev Notes on Notion
+        </a>
+      </li>
+    </ul>
+  </section>
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>

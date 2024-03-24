@@ -16,20 +16,44 @@ E-mail you ask? un-rot13 this: 'sreanaqbonffb.oe ng tznvy.pbz'
 $ tr '[a-z]' '[n-za-m]' <<< 'sreanaqbonffb.oe ng tznvy.pbz'
 ```
 
-  <p class="dev-how-to">
-    <style scoped>
-      .dev-how-to {
-        border: 2px dashed #6ca516;
-        text-align: center;
-        padding: 0.6em;
-      }
-    </style>
-    Check my
+<section class="my-other-sites">
+<style scoped>
+  .my-other-sites {
+    border: 2px dashed #6ca516;
+    text-align: center;
+    padding: 0.6em;
+    margin-bottom: 1em;
+  }
+  .my-other-sites ul {
+    list-style: none;
+  }
+</style>
+<p>Check my other notes and docs as well:</p>
+<ul>
+  <li>
     <a
       href="https://www.devhowto.dev/"
       target="_blank"
     >
-      https://www.devhowto.dev/
+      Dev How To on Read The Docs
     </a>
-    website as well.
-  </p>
+  </li>
+  <li>
+    <a
+      href="https://devhowto.gitlab.io"
+      target="_blank"
+    >
+      Dev How To on Gitlab Pages
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://devhowto.notion.site/9404c47a1fba4cbd90193b4f821d9d03"
+      target="_blank"
+    >
+      Dev How To Dev Notes on Notion
+    </a>
+  </li>
+</ul>
+</section>
+
