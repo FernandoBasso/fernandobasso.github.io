@@ -20,9 +20,9 @@ categories: javascript
     <figure style="max-width: 100%;">
         <img
             style="display: inline-block; max-height: 600px;"
-            src="/imgs/javascript/Victory-nephew-drawing-girl.png?v=1"
-            alt="Girl, by Vitória (my 6-year-old nephew)">
-        <figcaption style="color: #000">Girl, by Vitória (my 6-year-old nephew)</figcaption>
+            src="/imgs/javascript/Victory-niece-drawing-girl.png?v=1"
+            alt="Girl, by Vitória (my 6-year-old niece)">
+        <figcaption style="color: #000">Girl, by Vitória (my 6-year-old niece)</figcaption>
     </figure>
 </div>
 
