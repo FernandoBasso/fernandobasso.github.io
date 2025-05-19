@@ -28,22 +28,22 @@ $ tr '[a-z]' '[n-za-m]' <<< 'sreanaqbonffb.oe ng tznvy.pbz'
     list-style: none;
   }
 </style>
-<p>Check my other notes and docs as well:</p>
+<p>Check my other tutorials and docs as well:</p>
 <ul>
+  <li>
+    <a
+      href="https://fernandobasso.dev/devhowto"
+      target="_blank"
+    >
+      My Dev How To Notes on this site
+    </a>
+  </li>
   <li>
     <a
       href="https://www.devhowto.dev/"
       target="_blank"
     >
       Dev How To on Read The Docs
-    </a>
-  </li>
-  <li>
-    <a
-      href="https://devhowto.gitlab.io"
-      target="_blank"
-    >
-      Dev How To on Gitlab Pages
     </a>
   </li>
   <li>
