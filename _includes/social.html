@@ -9,22 +9,20 @@
             <use xlink:href="{{ '/assets/social-icons.svg#linkedin' | relative_url }}"
             ></use>
           </svg>
-          <span class="username">{{ site.username_linkedin | escape }}</span>
+          <span class="username">Fernando Basso on LinkedIn</span>
         </a>
     </li>
   {%- endif -%}
 
-  {%- if site.username_skype -%}
+  {%- if site.username_github -%}
   <li>
-    <a href="skype:fernandobasso.br?chat">
+    <a href="https://github.com/fernandobasso" target="_blank">
       <svg class="svg-icon">
         <use
-          xlink:href="{{ '/assets/social-icons.svg#skype' | relative_url }}"
+          xlink:href="{{ '/assets/social-icons.svg#github' | relative_url }}"
         ></use>
       </svg>
-      <span class="username"
-        >{{ site.username_skype | escape }}
-      </span>
+      <span class="username">Fernando Basso on Github</span>
       </a>
   </li>
   {%- endif -%}
@@ -37,39 +35,7 @@
           xlink:href="{{ '/assets/social-icons.svg#gitlab' | relative_url }}"
         ></use>
       </svg>
-      <span class="username"
-        >{{ site.username_gitlab | escape }}
-      </span>
-      </a>
-  </li>
-  {%- endif -%}
-
-  {%- if site.username_github -%}
-  <li>
-    <a href="https://github.com/fernandobasso" target="_blank">
-      <svg class="svg-icon">
-        <use
-          xlink:href="{{ '/assets/social-icons.svg#github' | relative_url }}"
-        ></use>
-      </svg>
-      <span class="username"
-        >{{ site.username_github | escape }}
-      </span>
-      </a>
-  </li>
-  {%- endif -%}
-
-  {%- if site.username_gplus -%}
-  <li>
-    <a href="https://plus.google.com/+FernandoBasso" target="_blank">
-      <svg class="svg-icon">
-        <use
-          xlink:href="{{ '/assets/social-icons.svg#gplus' | relative_url }}"
-        ></use>
-      </svg>
-      <span class="username"
-        >{{ site.username_gplus | escape }}
-      </span>
+      <span class="username">Fernando Basso on Gitlab</span>
       </a>
   </li>
   {%- endif -%}
@@ -97,9 +63,7 @@
           xlink:href="{{ '/assets/social-icons.svg#twitter' | relative_url }}"
         ></use>
       </svg>
-      <span class="username"
-        >{{ site.username_twitter | escape }}
-      </span>
+      <span class="username">Fernando Basso on Twitter</span>
       </a>
   </li>
   {%- endif -%}
