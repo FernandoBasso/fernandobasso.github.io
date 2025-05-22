@@ -2,7 +2,7 @@
 layout: page
 toc: true
 title: Résumé
-index: 1
+index: 2
 permalink: resume.html
 ---
 

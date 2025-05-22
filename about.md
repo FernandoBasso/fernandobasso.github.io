@@ -2,7 +2,7 @@
 layout: page
 toc: true
 title: About Me
-index: 2
+index: 1
 permalink: about.html
 ---
 
