@@ -45,7 +45,7 @@ I then, as it was always my approach (and still is), started looking for books o
 I made some progress (mostly with grammar), but only when I was in a better-paying musical group did I have enough money to pay for an English course, which I eventually did.
 
 I started studying English at CCAA, and again, studied as hard as I possibly could.
-The course was though.
+The course was tough.
 It would take 6.5 years to complete (if you never failed a semester) and was very demanding.
 By the end of the 5th year, I talked to my boss (who apparently had me in his highest esteem) and he hired me to work as an English teacher.
 
