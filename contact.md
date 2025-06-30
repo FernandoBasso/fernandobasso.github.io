@@ -48,7 +48,7 @@ $ tr '[a-z]' '[n-za-m]' <<< 'sreanaqbonffb.oe ng tznvy.pbz'
   </li>
   <li>
     <a
-      href="https://fernandobasso.notion.site/Dev-How-To-Fernando-Basso-2228c2e26d3c8085bc5ce900e0f8374b
+      href="https://fernandobasso.notion.site/Dev-How-To-Fernando-Basso-2228c2e26d3c8085bc5ce900e0f8374b"
       target="_blank"
     >
       Dev How To Dev Notes on Notion
