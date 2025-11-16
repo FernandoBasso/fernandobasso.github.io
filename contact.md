@@ -32,26 +32,16 @@ $ tr '[a-z]' '[n-za-m]' <<< 'sreanaqbonffb.oe ng tznvy.pbz'
 <ul>
   <li>
     <a
-      href="https://fernandobasso.dev/devhowto"
-      target="_blank"
+      href="https://fernandobasso.gitlab.io/devnotes/"
     >
-      My Dev How To Notes on this site
-    </a>
-  </li>
-  <li>
-    <a
-      href="https://www.devhowto.dev/"
-      target="_blank"
-    >
-      Dev How To on Read The Docs
-    </a>
+      My dev notes published from Obsidian.
   </li>
   <li>
     <a
       href="https://fernandobasso.notion.site/Dev-How-To-Fernando-Basso-2228c2e26d3c8085bc5ce900e0f8374b"
       target="_blank"
     >
-      Dev How To Dev Notes on Notion
+      My dev notes on Notion.
     </a>
   </li>
 </ul>
